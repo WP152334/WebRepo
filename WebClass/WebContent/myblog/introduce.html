@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Introduce</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"
+	href="https://bootswatch.com/darkly/bootstrap.min.css">
+<script>
+	function menu_over(e) {
+		e.setAttribute("class", "nav-item active"); //<li class="nav-item"
+	}
+	function menu_out(e) {
+		e.setAttribute("class", "nav-item"); //<li class="nav-item"
+	}
+</script>
+
+
+<style>
+.container {
+	padding-top: 30px;
+}
+
+.gallery-title {
+	font-size: 36px;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 70px;
+}
+
+.gallery-title:after {
+	content: "";
+	position: absolute;
+	width: 7.5%;
+	left: 46.5%;
+	height: 45px;
+	border-bottom: 1px solid #5e5e5e;
+}
+
+.btn-default:active .filter-button:active {
+	background-color: #42B32F;
+	color: white;
+}
+
+.port-image {
+	width: 100%;
+}
+
+.gallery_product {
+	margin-bottom: 30px;
+}
+</style>
+</head>
+<body>
+	<!-- 메뉴바 -->
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand"
+					href="blog.html">Home</a>
+			</div>
+
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a
+						href="introduce.html">Introduce</a></li>
+					<li><a
+						href="favorites.html">Favorites</a></li>
+					<li><a
+						href="vision.html">Vision</a></li>
+					<li><a
+						href="activity.html">Activity</a></li>
+					<li><a
+						href="signin.html">Sign
+							in</a></li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<form class="navbar-form my-2" id="LoginForm">
+						<input class="form-control mr-sm-2" type="text" placeholder="ID"
+							aria-label="ID" id="id" required> <input
+							class="form-control mr-sm-2" type="password" placeholder="PWD"
+							aria-label="PWD" id="pwd" required>
+						<button class="btn btn-default" type="submit">Login</button>
+					</form>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<h1 align="center" class="gallery-title">Introduce</h1>
+	<div class="container">
+		<div class="row">
+			<div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+			<div
+				class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+				<h4></h4>
+				<img src="CheerLeader.jpg" class="img-responsive">
+			</div>
+			<div>
+				<br>
+				<h4>Name : Heo Chang Jun</h4>
+				<h4>Date of Birth : 2000.06.04</h4>
+				<h4>School : Korean Digital Midea High School</h4>
+			</div>
+		</div>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sign in</title>
+<link rel="stylesheet"
+	href="https://bootswatch.com/darkly/bootstrap.min.css">
+</head>
+<body>
+	<!-- 메뉴바 -->
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand"
+					href="blog.html">Home</a>
+			</div>
+
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a
+						href="introduce.html">Introduce
+					</a></li>
+					<li><a
+						href="favorites.html">Favorites</a></li>
+					<li><a
+						href="vision.html">Vision</a></li>
+					<li><a
+						href="activity.html">Activity</a></li>
+					<li class="active"><a
+						href="signin.html">Sign
+							in</a></li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<form class="navbar-form my-2" id="LoginForm">
+						<input class="form-control mr-sm-2" type="text" placeholder="ID"
+							aria-label="ID" id="id" required> <input
+							class="form-control mr-sm-2" type="password" placeholder="PWD"
+							aria-label="PWD" id="pwd" required>
+						<button class="btn btn-default" type="submit">Login</button>
+					</form>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<form class="form-horizontal" id="SigninForm">
+			<fieldset>
+				<h1 align="center">Sign in</h1>
+				<br>
+				<div class="form-group">
+					<label for="inputID" class="col-lg-2 control-label">ID</label>
+					<div class="col-lg-10">
+						<input type="text" class="form-control" id="inputID"
+							placeholder="ID" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-lg-2 control-label">Grade</label>
+					<div class="col-lg-10">
+						<div class="radio">
+							<label> <input type="radio" name="grades" id="grade1"
+								value="grade1" checked="" required> 1
+							</label>
+						</div>
+						<div class="radio">
+							<label> <input type="radio" name="grades" id="grade2"
+								value="grade2" required> 2
+							</label>
+						</div>
+						<div class="radio">
+							<label> <input type="radio" name="grades" id="grade3"
+								value="grade3" required> 3
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="select" class="col-lg-2 control-label">Class</label>
+					<div class="col-lg-10">
+						<select class="form-control" id="classSelect" required>
+							<option value="">select</option>
+							<option value="class1">1</option>
+							<option value="class2">2</option>
+							<option value="class3">3</option>
+							<option value="class4">4</option>
+							<option value="class5">5</option>
+							<option value="class6">6</option>
+						</select> <br>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="select" class="col-lg-2 control-label">Number</label>
+					<div class="col-lg-10">
+						<select class="form-control" id="numberSelect" required>
+							<option value="">select</option>
+							<option value="number1">1</option>
+							<option value="number2">2</option>
+							<option value="number3">3</option>
+							<option value="number4">4</option>
+							<option value="number5">5</option>
+							<option value="number6">6</option>
+							<option value="number7">7</option>
+							<option value="number8">8</option>
+							<option value="number9">9</option>
+							<option value="number10">10</option>
+							<option value="number11">11</option>
+							<option value="number12">12</option>
+							<option value="number13">13</option>
+							<option value="number14">14</option>
+							<option value="number15">15</option>
+							<option value="number16">16</option>
+							<option value="number17">17</option>
+							<option value="number18">18</option>
+							<option value="number19">19</option>
+							<option value="number20">20</option>
+							<option value="number21">21</option>
+							<option value="number22">22</option>
+							<option value="number23">23</option>
+							<option value="number24">24</option>
+							<option value="number25">25</option>
+							<option value="number26">26</option>
+							<option value="number27">27</option>
+							<option value="number28">28</option>
+							<option value="number29">29</option>
+							<option value="number30">30</option>
+							<option value="number31">31</option>
+							<option value="number32">32</option>
+							<option value="number33">33</option>
+							<option value="number34">34</option>
+							<option value="number35">35</option>
+							<option value="number36">36</option>
+							<option value="number37">37</option>
+						</select> <br>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputName" class="col-lg-2 control-label">Name</label>
+					<div class="col-lg-10">
+						<input type="text" class="form-control" id="inputName"
+							placeholder="Name" required>
+					</div>
+				</div>
+				<div class="form-group" id="SigninForm">
+					<div class="col-lg-10 col-lg-offset-2">
+						<button type="reset" class="btn btn-default">Cancel</button>
+						<button type="submit" class="btn btn-primary" id="submit">Submit</button>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	<!-- Modal -->
+	<div class="modal" id="registerModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Signin result</h5>
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary"
+							data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+		integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+		integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+		crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(
+				function() {
+					$('#SigninForm').submit(
+							function(event) {
+								//자동으로 submit되는 것 막기
+								event.preventDefault();
+								var nameValue = $('#inputName').val();
+
+								$.post("http://httpbin.org/post", {
+									"nameValue" : nameValue
+								}, function(data) {
+									var myModal = $('#registerModal');
+									myModal.modal();
+									myModal.find('.modal-body').text(
+											data.form.nameValue
+													+ "sign in sucess");
+								});
+							});
+				});
+	</script>
+</body>
+</html>
